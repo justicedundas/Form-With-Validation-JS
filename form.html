@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Contact Form</title>
+        <link rel="stylesheet" href='styles.css' type='text/css' />
+    </head>
+    <body>
+        <form name='registration' onSubmit="return formValidation();">
+            <label for='email'>
+                <span>Email address: </span>
+                <input type="email" class='email' id='email' name="email" required minlength="8" required>
+                <span class='error' aria-live="polite"></span>
+            </label>
+            <div>
+                <select name="country">
+                    <option selected="" value="Default">(Please select a country)</option>
+                    <option value="AF">Australia</option>
+                    <option value="AL">Canada</option>
+                    <option value="DZ">India</option>
+                    <option value="AS">Russia</option>
+                    <option value="AD">USA</option>
+                </select>
+            </div>
+            <div>
+                <label for='zip'>ZIP Code: </label>
+                <input type="text" id="zip" name="zip" required>
+            </div>
+            <div>
+                <label for='passid'>Password: </label>
+                <input type="password" id="passid" name="passid" minlength="8" required>
+            </div>
+            <div>
+                <label for='confirm-password'>Confirm Password: </label>
+                <input type="text" id="confirm-password" name="my_password" required>
+            </div>
+            <button>Submit</button>
+        </form>
+        <script src="./rules.js" ></script>
+    </body>
+
+</html>
