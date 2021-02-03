@@ -1,4 +1,4 @@
-# Form Validation in JS
+# Form With Validation in JS
 
 Items to collect:
 * Email
